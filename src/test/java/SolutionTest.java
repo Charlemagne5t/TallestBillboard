@@ -25,4 +25,21 @@ public class SolutionTest {
         int actual = new Solution().tallestBillboard(rods);
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void tallestBillboardTest4() {
+        int[] rods = {61,45,43,54,40,53,55,47,51,59,42};
+        int expected = 275;
+        int actual = new Solution().tallestBillboard(rods);
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void tallestBillboardTest5() {
+        int[] rods = {1,2,4,8,16,32,64,128,256,512,50,50,50,150,150,150,100,100,100,123};
+        int expected = 1023;
+        int actual = new Solution().tallestBillboard(rods);
+        Assert.assertEquals(expected, actual);
+    }
+
 }
